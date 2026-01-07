@@ -32,7 +32,6 @@ app.get('/allcards', async (req, res) => {
         res.status(500).json({ message: 'Server error for allcards'});
     }
 })
-
 app.post('/addcard', async (req, res) => {
     const {card_name, card_pic} =req.body;
     try {
