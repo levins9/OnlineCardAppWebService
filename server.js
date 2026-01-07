@@ -40,6 +40,6 @@ app.post('/addcard', async (req, res) => {
         res.status (201).json({message: 'Card' + card_name + 'successfully added'});
     } catch (err) {
         console.error(err);
-        res.status(500).json({ message: 'Server error - could not add card'+ card_name });
+        res.status(500).json({ message: 'Server error - could not add card '+ card_name });
     }
 })
